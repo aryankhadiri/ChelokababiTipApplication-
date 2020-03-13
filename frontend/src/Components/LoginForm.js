@@ -129,18 +129,25 @@ class LoginForm extends React.Component {
             passwordError: ''
         };
 
-        let emailErrorNotice;
-        let passwordErrorNotice;
+        let emailStatusCode;
+        let passwordStatusCode;
 
         // going to conditionally return the error descriptors in the case of an invalid form 
         // ** removed them in the render until I can fix their placement and "shoving" of the login/submit button. **
         if (!this.state.formValidities.emailIsValid && this.state.email != "") {
             errorDescriptions.emailError = <FormErrors errorMessage={this.state.formErrors.email} />
-            emailErrorNotice = this.state.formErrors.email != '' ? "error-detected" : ""
+            emailStatusCode = "error-detected";
         }
+        else if (this.state.formValidities.emailIsValid) {
+            emailStatusCode = "valid";
+        }
+
         if (!this.state.formValidities.passwordIsValid && this.state.password != "") {
             errorDescriptions.passwordError = <FormErrors errorMessage={this.state.formErrors.password} />
-            passwordErrorNotice = this.state.formErrors.password != '' ? "error-detected" : ""
+            passwordStatusCode = "error-detected";
+        }
+        else if (this.state.formValidities.passwordIsValid) {
+            passwordStatusCode = "valid";
         }
 
         return (
@@ -157,14 +164,14 @@ class LoginForm extends React.Component {
                                 <span id="email-icon">
                                     <label htmlFor="email"><FontAwesomeIcon icon={farPaperPlane} size="lg" color="#FFFFFF"/></label>
                                     <input type="email" id="email" name="email" value={this.state.email} onChange={this.handleUserInput} 
-                                        className={emailErrorNotice} placeholder="email..." />
+                                        className={emailStatusCode} placeholder="email..." />
                                 </span>
                             </Col>
                             <Col className="password">
                                 <span id="password-icon">
                                     <label htmlFor="password"><FontAwesomeIcon icon={faFingerprint} size="lg" color="#FFFFFF" /></label>
                                     <input type="password" id="password" name="password" value={this.state.password} 
-                                        onChange={this.handleUserInput} className={passwordErrorNotice} placeholder="password..." />
+                                        onChange={this.handleUserInput} className={passwordStatusCode} placeholder="password..." />
                                 </span>
                             </Col>
                             <Row className="submission">

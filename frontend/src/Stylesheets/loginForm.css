@@ -113,6 +113,12 @@ body {
   transition: border-bottom 450ms ease;
 }
 
+#login-wrapper .login-form input[type="email"].valid, #login-wrapper .login-form input[type="password"].valid {
+  border-bottom: 1px solid rgba(57, 212, 57, 0.76);
+  -webkit-transition: border-bottom 450ms ease;
+  transition: border-bottom 450ms ease;
+}
+
 #login-wrapper .login-form .submission {
   position: relative;
   top: 60px;

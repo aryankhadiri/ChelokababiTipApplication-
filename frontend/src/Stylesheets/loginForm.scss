@@ -10,6 +10,7 @@ $font-color: #FFFFFFFF;
 $inactive: rgba(255,255,255,0.4);
 $active: rgba(255,255,255,1);
 $error-code: rgba(212, 57, 57, 0.76);
+$valid: rgba(57,212,57,0.76);
 
 // light mode color palette variables...
 // none yet ----------------------------
@@ -89,6 +90,11 @@ body {
 
             &.error-detected {
                 border-bottom: 1px solid $error-code;
+                transition: border-bottom 450ms ease;
+            }
+
+            &.valid {
+                border-bottom: 1px solid $valid;
                 transition: border-bottom 450ms ease;
             }
         }
