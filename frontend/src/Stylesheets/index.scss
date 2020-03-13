@@ -1,0 +1,15 @@
+// serving up a stylesheet for index.html
+
+// font styles...
+@import url(https://fonts.googleapis.com/css?family=Varela);
+
+// dark ui color palette variables...
+$dark-mode-backsplash: rgba(21,21,21,1);
+$surface-layer: #222222;
+
+// light mode color palette variables...
+
+#root
+{
+    background-color: $dark-mode-backsplash;
+}

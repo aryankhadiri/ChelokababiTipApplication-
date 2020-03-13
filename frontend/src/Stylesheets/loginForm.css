@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Varela);
+body {
+  background-color: #151515;
+  font-family: "Varela";
+  color: #FFFFFFFF;
+}
+
+#login-wrapper .login-header {
+  font-size: 34px;
+  padding: 5px;
+  color: white;
+}
+
+#login-wrapper .login-header h1 {
+  font-weight: lighter;
+}
+
+#login-wrapper .login-header::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 163.5px;
+  width: 17rem;
+  height: 2px;
+  background-color: white;
+}
+
+#login-wrapper .login-form {
+  -webkit-transform: translateY(19vh);
+          transform: translateY(19vh);
+}
+
+#login-wrapper .login-form fieldset {
+  border: none;
+  text-align: center;
+}
+
+#login-wrapper .login-form fieldset .email, #login-wrapper .login-form fieldset .password {
+  display: inline;
+}
+
+#login-wrapper .login-form fieldset .error {
+  color: rgba(212, 57, 57, 0.76);
+}
+
+#login-wrapper .login-form input[type="email"], #login-wrapper .login-form input[type="password"] {
+  border: none;
+  border-bottom: 1px solid white;
+  -webkit-transition: border-bottom 1s ease;
+  transition: border-bottom 1s ease;
+  background-color: transparent;
+  margin: 15px;
+  padding: 15px;
+  font-size: 20px;
+  color: white;
+}
+
+#login-wrapper .login-form input[type="email"]:focus, #login-wrapper .login-form input[type="password"]:focus {
+  outline: none;
+}
+
+#login-wrapper .login-form input[type="email"]:hover::-webkit-input-placeholder, #login-wrapper .login-form input[type="password"]:hover::-webkit-input-placeholder {
+  color: white;
+  -webkit-transition: color 750ms ease;
+  transition: color 750ms ease;
+}
+
+#login-wrapper .login-form input[type="email"]:hover:-ms-input-placeholder, #login-wrapper .login-form input[type="password"]:hover:-ms-input-placeholder {
+  color: white;
+  -webkit-transition: color 750ms ease;
+  transition: color 750ms ease;
+}
+
+#login-wrapper .login-form input[type="email"]:hover::-ms-input-placeholder, #login-wrapper .login-form input[type="password"]:hover::-ms-input-placeholder {
+  color: white;
+  -webkit-transition: color 750ms ease;
+  transition: color 750ms ease;
+}
+
+#login-wrapper .login-form input[type="email"]:hover::placeholder, #login-wrapper .login-form input[type="password"]:hover::placeholder {
+  color: white;
+  -webkit-transition: color 750ms ease;
+  transition: color 750ms ease;
+}
+
+#login-wrapper .login-form input[type="email"]::-webkit-input-placeholder, #login-wrapper .login-form input[type="password"]::-webkit-input-placeholder {
+  font-style: italic;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+#login-wrapper .login-form input[type="email"]:-ms-input-placeholder, #login-wrapper .login-form input[type="password"]:-ms-input-placeholder {
+  font-style: italic;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+#login-wrapper .login-form input[type="email"]::-ms-input-placeholder, #login-wrapper .login-form input[type="password"]::-ms-input-placeholder {
+  font-style: italic;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+#login-wrapper .login-form input[type="email"]::placeholder, #login-wrapper .login-form input[type="password"]::placeholder {
+  font-style: italic;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+#login-wrapper .login-form input[type="email"].error-detected, #login-wrapper .login-form input[type="password"].error-detected {
+  border-bottom: 1px solid rgba(212, 57, 57, 0.76);
+  -webkit-transition: border-bottom 450ms ease;
+  transition: border-bottom 450ms ease;
+}
+
+#login-wrapper .login-form .submission {
+  position: relative;
+  top: 60px;
+}
+
+#login-wrapper .login-form .submission input[type="submit"] {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  width: 17rem;
+  height: 35px;
+  font-size: 22px;
+  font-weight: 200;
+  font-style: italic;
+  cursor: pointer;
+}
+
+#login-wrapper .login-form .submission input[type="submit"]:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-transition: background-color 300ms ease-in;
+  transition: background-color 300ms ease-in;
+}
+
+#login-wrapper .login-form .submission input[type="submit"]:disabled {
+  color: rgba(212, 57, 57, 0.76);
+  border: 1px solid rgba(212, 57, 57, 0.76);
+  -webkit-transition: all 450ms ease;
+  transition: all 450ms ease;
+  cursor: default;
+}
+
+#login-wrapper .login-form .submission input[type="submit"]:disabled:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+/*# sourceMappingURL=loginForm.css.map */

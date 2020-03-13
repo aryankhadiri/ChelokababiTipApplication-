@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Varela);
+#overlay {
+  background-color: rgba(16, 16, 16, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#overlay {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Varela";
+  font-size: 48px;
+  text-align: center;
+}
+/*# sourceMappingURL=overlay.css.map */
